@@ -1,6 +1,7 @@
-﻿Write-Host ""
-Write-Host "***Copy the JPG files from local project directory to server project directory***"
-Write-Host ""
+Write-Host "####################################################"
+Write-Host "####COPY THE JPGs FROM LOCAL TO SERVER DIRECTORY####" -ForegroundColor Cyan
+Write-Host "####################################################"
+Write-Host
 $number = Read-Host "Enter project number"
 $serverDir = '\\192.168.17.239\Visualization\02 - Simeon'
 $projectName = $(Get-ChildItem -Path $serverDir\$number*)
@@ -15,4 +16,3 @@ Write-Host "**** $projectName **** COPIED TO CLIPBOARD ****"
 Write-Host 
 Set-Clipboard -Value "$projectName"
 pause
-
