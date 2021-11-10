@@ -1,5 +1,5 @@
 Write-Host "####################################################"
-Write-Host "####COPY THE JPGs FROM LOCAL TO SERVER DIRECTORY####" -ForegroundColor Cyan
+Write-Host "### COPY THE JPGs FROM LOCAL TO SERVER DIRECTORY ###" -ForegroundColor Cyan
 Write-Host "####################################################"
 Write-Host
 $number = Read-Host "Enter project number"
